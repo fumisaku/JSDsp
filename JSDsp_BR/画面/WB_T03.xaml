@@ -1,0 +1,94 @@
+﻿<Window x:Class="WB_T03"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+        mc:Ignorable="d"
+        Title="WB_T03"  Height="1080" Width="1920" AllowsTransparency="True" WindowStyle="None" >
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="164" Stroke="Black" VerticalAlignment="Top" Width="1920">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.DesktopColorKey}}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image x:Name="ロゴ中央"  
+               Source="C:\JSDsp\img\wdsf world open series breaking BLK.png"
+               HorizontalAlignment="Left"   
+               Height="164"  
+               Margin="816,0,0,0"   
+               VerticalAlignment="Top"                
+               Width="268"/>
+        <Image x:Name="ロゴ右"  
+               Source="C:\JSDsp\img\JDSF.png"
+               HorizontalAlignment="Left" 
+               Height="106" 
+               Margin="1591,35,0,0" 
+               VerticalAlignment="Top" 
+               Width="300"/>
+        <Image x:Name="ロゴ左"  
+               Source="C:\JSDsp\img\JDSF_BRLogo.png"
+               HorizontalAlignment="Left" 
+               Height="102" 
+               VerticalAlignment="Top" 
+               Width="135" Margin="31,35,0,0"/>
+
+        <!-- 1ラウンド テキストボックス-->
+
+        <!-- ２ラウンド テキストボックス-->
+
+        <!-- 準決勝 テキストボックス-->
+
+        <TextBox x:Name ="TB_SF_01" HorizontalAlignment="Left" Height="50" Width="300" Margin="230,942,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No01"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="30"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+        <TextBox x:Name ="TB_SF_02" HorizontalAlignment="Left" Height="50" Width="300" Margin="610,942,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No02"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="30"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+
+        <TextBox x:Name ="TB_SF_03" HorizontalAlignment="Left" Height="50" Width="300" Margin="990,942,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No03"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="30"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+        <TextBox x:Name ="TB_SF_04" HorizontalAlignment="Left" Height="50" Width="300" Margin="1370,942,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No04"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="30"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+
+        <!-- 決勝 テキストボックス-->
+
+        <TextBox x:Name ="TB_FF_01" HorizontalAlignment="Left" Height="80" Width="300" Margin="420,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No01"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="40"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+        <TextBox x:Name ="TB_FF_02" HorizontalAlignment="Left" Height="80" Width="300" Margin="1180,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="No02"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="40"   FontWeight="Bold"   Background="Gray" BorderThickness="3" BorderBrush="White"/>
+
+        <!-- 結果 テキストボックス-->
+
+        <TextBox x:Name ="TB_1ST" HorizontalAlignment="Left" Height="80" Width="300" Margin="798,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="優勝者"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="50"   FontWeight="Bold"   Background="Gold" BorderThickness="3" BorderBrush="White"/>
+        <TextBox x:Name ="TB_3RD" HorizontalAlignment="Left" Height="80" Width="300" Margin="798,686,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="第3位"     TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="Century Gothic"    FontSize="40"   FontWeight="Bold"   Background="Brown" BorderThickness="3" BorderBrush="White"/>
+
+
+        <!-- 1ラウンド 線-->
+
+        <!-- ２ラウンド 線-->
+
+
+        <!-- 準決勝ラウンド 線-->
+        <Line x:Name="LN_SF_1V" X1="380" Y1="800"  X2="380" Y2="942"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_SF_2V" X1="760" Y1="800"  X2="760" Y2="942"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+        <Line x:Name="LN_SF_3V" X1="1140" Y1="800"  X2="1140" Y2="942"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_SF_4V" X1="1520" Y1="800"  X2="1520" Y2="942"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+        <Line x:Name="LN_SF_1H" X1="380" Y1="800"  X2="760" Y2="800"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_SF_2H" X1="1140" Y1="800"  X2="1520" Y2="800"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+        <Line x:Name="LN_SF_5V" X1="570" Y1="800"  X2="570" Y2="650"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_SF_6V" X1="1330" Y1="800"  X2="1330" Y2="650"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+
+
+        <!-- 決勝ラウンド 線-->
+        <Line x:Name="LN_FF_1H" X1="570" Y1="500"  X2="1330" Y2="500"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_FF_1V" X1="950" Y1="350"  X2="950" Y2="500"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+        <Line x:Name="LN_FF_2V" X1="570" Y1="500"  X2="570" Y2="570"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+        <Line x:Name="LN_FF_3V" X1="1330" Y1="500"  X2="1330" Y2="570"  Stroke="Black"  StrokeThickness="4" Margin="0,0,0,0" />
+
+
+        <Label x:Name="LB_Gold" Content="GOLD" Foreground="Gold"   HorizontalAlignment="Left" Margin="900,220,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.545,16.339"/>
+        <Label x:Name="LB_Bronze" Content="Bronze" Foreground="Brown" HorizontalAlignment="Left" Margin="900,632,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.545,16.339"/>
+        <Label x:Name="LB_Silver_1" Content="Silver" Foreground="Silver"   HorizontalAlignment="Left" Margin="420,520,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.545,16.339"/>
+        <Label x:Name="LB_Silver_2" Content="Silver" Foreground="Silver"   HorizontalAlignment="Left" Margin="1180,520,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.545,16.339"/>
+        <TextBox x:Name="TB_Side"  Text="◀ BBOY SIDE ▶" HorizontalAlignment="Left" Height="108" Width="423" Margin="1478,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  TextAlignment="Center"   VerticalContentAlignment="Center"  Foreground="White"  FontFamily="HGPSoeiKakugothicUB"    FontSize="50"   FontWeight="Bold"   Background="Black" BorderThickness="3" BorderBrush="Black" RenderTransformOrigin="0.28,0.511"/>
+
+
+    </Grid>
+</Window>
